@@ -48,11 +48,8 @@ const handleSubmit = async (e) => {
     message: document.getElementById("message").value,
   };
 
-  // Get submit button
   const submitBtn = document.querySelector(".submit-btn");
   const originalText = submitBtn.innerHTML;
-
-  // Show loading state
   submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   submitBtn.disabled = true;
 
@@ -77,32 +74,25 @@ const handleSubmit = async (e) => {
     document.querySelector(".contact-form").reset();
   } catch (error) {
     console.error("EmailJS Error:", error);
-    // Show error message
     showMessage(
       "Failed to send message. Please try again or contact directly via email.",
       "error"
     );
   } finally {
-    // Reset button
     submitBtn.innerHTML = originalText;
     submitBtn.disabled = false;
   }
 };
-
-// Function to show success/error messages
 function showMessage(message, type) {
-  // Remove existing message if any
   const existingMessage = document.querySelector(".form-message");
   if (existingMessage) {
     existingMessage.remove();
   }
-
-  // Create message element
   const messageDiv = document.createElement("div");
   messageDiv.className = `form-message ${type}`;
   messageDiv.textContent = message;
 
-  // Add styles
+
   messageDiv.style.cssText = `
         padding: 12px 16px;
         margin: 10px 0;
@@ -116,11 +106,11 @@ function showMessage(message, type) {
         }
     `;
 
-  //Insert message before the form
+  
   const form = document.querySelector(".contact-form");
   form.parentNode.insertBefore(messageDiv, form);
 
-  //Remove message after 3 seconds
+  
   setTimeout(() => {
     messageDiv.remove();
   }, 3000);
