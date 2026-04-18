@@ -7,16 +7,16 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-   <link rel="stylesheet" href="task3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="task3.css">
   </head>
-  <body>
+  <body data-theme="light">
     <header>
       <div class="header-content">
         <div id="homee"></div>
-        <a href="#home" class="logo">Portfolio</a>
+        <a href="#home" class="logo">DVK</a>
         <nav>
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="#homee">Home</a></li>
+          <ul class="nav-menu"> 
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item"><a href="#skill">Skills</a></li>
             <li class="nav-item"><a href="#project">Projects</a></li>
@@ -25,178 +25,252 @@
             <li class="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       </div>
     </header>
-    <div id="about"></div>
-    <div class="container">
-      <div class="head">
-        <div class="header-left">
-          <h1>Hi, I am D. Vamsi Krishna</h1>
-          <p class="college">from Vishnu Institute of Technology</p>
-          <div class="typewriter" id="typewriter"></div>
-        </div>
-        <div class="header-right">
-          <div class="profile-img">
-            <img
-              src="image.png" alt="D.Vamsi Krishna"
-            />
-          </div>
-        </div>
-      </div>
 
-      <div id="skill"></div>
-      <div class="section">
-        <h2 class="section-title">About Me</h2>
-        <p>
-          A dedicated B.Tech student in Artificial Intelligence and Data
-          Science, passionate about building useful web applications.
-          Comfortable working with Java, Python, and modern web technologies.
-          Experienced in data analysis and visualization. Known for teamwork,
-          problem-solving, and communication skills. Eager to apply data science
-          techniques to real-world problems.
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="dot"></span>
+          Open to Internships &amp; Freelance
+        </div>
+
+        <h1 class="hero-name">
+          <span class="line-white">Dasari</span>
+          <span class="line-green">Vamsi</span>
+          <span class="line-green">Krishna</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          AI &amp; Data Science Student
+          <span>·</span>
+          Web Developer
+          <span>·</span>
+          Designer
         </p>
+
+        <p class="hero-bio">
+          B.Tech undergraduate in Artificial Intelligence &amp; Data Science
+          at Vishnu Institute of Technology, Bhimavaram. Passionate
+          about building web apps, exploring AI/ML, and creating
+          impactful designs. Always learning, always building.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-green" href="#contact">Get in Touch ↗</a>
+          <a class="btn btn-outline" href="https://github.com/Vamsi4527-dev" target="_blank">View GitHub →</a>
+        </div>
       </div>
 
-      <div class="section">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h4><i class="fas fa-code"></i> Programming Languages</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4><i class="fas fa-globe"></i> Web Development</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">JavaScript</span>
-            </div>
-          </div>
+      <div class="hero-avatar">
+        <span class="avatar-initials"></span>
+      </div>
+    </section>
 
-          <div class="skill-category">
-            <h4><i class="fas fa-chart-bar"></i> Frameworks</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">NodeJs</span>
-              <span class="skill-tag">Flask</span>
-              <span class="skill-tag">FastAPI</span>
+    <div id="about"></div>
+    <div id="skill"></div>
+    <div class="container">
+      <div class="section about-section">
+        <span class="about-label">ABOUT ME</span>
+        <div class="about-container">
+          <div class="about-left">
+            <h2 class="about-heading">Building things<br>that<br>matter.</h2>
+            <p class="about-text">
+              I am a fresher pursuing B.Tech in Artificial Intelligence and Data Science at Vishnu Institute of Technology, Bhimavaram. I am genuinely passionate about learning new technologies and building real-world web applications.
+            </p>
+            <p class="about-text">
+              I love creating impactful image designs and am open to internship and freelancing opportunities. My curiosity drives me to explore everything from full-stack web dev to machine learning and data science.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-box">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">GitHub Repos</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">4th</div>
+              <div class="stat-label">Year B.Tech</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">AI/DS</div>
+              <div class="stat-label">Specialisation</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Things to Learn</div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="skill-category">
-            <h4><i class="fas fa-chart-bar"></i> Data Science</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">NumPy</span>
-              <span class="skill-tag">Pandas</span>
-              <span class="skill-tag">Matplotlib</span>
-              <span class="skill-tag">Seaborn</span>
-              <span class="skill-tag">Tableau</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4><i class="fas fa-tools"></i> Tools & Others</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">Excel</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">Canva</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">n8n</span>
-            </div>
-          </div>
+      <div class="section skills-section">
+        <span class="skills-label">TECH STACK</span>
+        <h2 class="skills-heading">Skills & Tools</h2>
+        <div class="all-skills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">TailwindCSS</span>
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">Nodejs</span>
+          <span class="skill-pill">Django</span>
+          <span class="skill-pill">Flask</span>
+          <span class="skill-pill">Firebase</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">Neo4j</span>
+          <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">TensorFlow</span>
+          <span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">Power BI</span>
+          <span class="skill-pill">Canva</span>
+          <span class="skill-pill">Vercel</span>
+          <span class="skill-pill">Netlify</span>
+          <span class="skill-pill">Render</span>
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Glitch</span>
         </div>
       </div>
       <div id="project"></div>
-      <div class="section">
-        <h2 class="section-title">Projects</h2>
+      <div class="section projects-section">
+        <span class="projects-label">WORK</span>
+        <h2 class="projects-heading">GitHub Projects</h2>
+        
+        <div class="projects-grid">
+          <div class="project-card-new">
+            <div class="project-icon"><i class="fas fa-file-video"></i></div>
+            <div class="project-content">
+              <h3 class="project-title-new">Link to MP4 / MP3</h3>
+              <p class="project-description">A web tool that converts online video/audio links into downloadable MP4 or MP3 files — a handy utility built with clean HTML.</p>
+              <span class="project-lang html-lang">• Python</span>
+            </div>
+          </div>
 
-        <div class="project-card">
-          <h3 class="project-title"> ResumeDost</h3>
-          <a href="https://resume-helper-lilac.vercel.app/">
-          <button type="submit" class="submit-btn" style=" margin-bottom:20px;border-radius:50px;width:80px">Visit</button></a>
-          <span class="project-tech">HTML • CSS  • JavaScript • Flask • Python • Gemini API</span>
-          <p>
-            <b>AI Resume Analyzer</b>
-            Built a web application that analyzes resumes against
-            job descriptions and generates ATS-style scores.
-            Implemented keyword matching logic to calculate Resume Score and JD Match Percentage.
-            Integrated Gemini API to provide strengths, missing skills,
-            and clear improvement suggestions.
-          </p>
+          <div class="project-card-new highlighted">
+            <div class="project-icon"><i class="fas fa-file"></i></div>
+            <div class="project-content">
+              <h3 class="project-title-new">Resume Helper</h3>
+              <p class="project-description">A JavaScript-powered assistant that helps users craft professional resumes quickly and effortlessly.</p>
+              <span class="project-lang js-lang">• JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card-new">
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <div class="project-content">
+              <h3 class="project-title-new">Portfolio Website</h3>
+              <p class="project-description">Personal portfolio website showcasing projects, skills, and contact information with a clean, modern design.</p>
+              <span class="project-lang html-lang">• HTML</span>
+            </div>
+          </div>
+
+          <div class="project-card-new">
+            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+            <div class="project-content">
+              <h3 class="project-title-new">Calculator</h3>
+              <p class="project-description">A clean, functional calculator built with HTML, CSS, and JavaScript featuring a polished, responsive interface.</p>
+              <span class="project-lang js-lang">• JS</span>
+            </div>
+          </div>
+
+          <div class="project-card-new">
+            <div class="project-icon"><i class="fas fa-tasks"></i></div>
+            <div class="project-content">
+              <h3 class="project-title-new">CodeAlpha Tasks</h3>
+              <p class="project-description">A collection of internship task projects completed as part of the CodeAlpha program, demonstrating front-end skills.</p>
+              <span class="project-lang html-lang">• HTML</span>
+            </div>
+          </div>
+
+          <div class="project-card-new">
+            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="project-content">
+              <h3 class="project-title-new">Job Finder</h3>
+              <p class="project-description">A JavaScript web app that helps users discover and filter job listings through an intuitive, streamlined interface.</p>
+              <span class="project-lang js-lang">• JavaScript</span>
+            </div>
+          </div>
         </div>
+      </div>
+      <div id="experience"></div>
+      <div class="section experience-section">
+        <span class="experience-label">EXPERIENCE</span>
+        <h2 class="experience-heading">Journey So Far</h2>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Web Development Intern</h3>
+              <p class="timeline-company">CodeAlpha · Virtual Internship</p>
+              <ul class="timeline-points">
+                <li>Built and deployed multiple front-end web projects as internship deliverables.</li>
+                <li>Gained hands-on experience with HTML, CSS, and JavaScript in real project workflows.</li>
+                <li>Developed a portfolio of sample projects demonstrating UI/UX and coding skills.</li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="project-card">
-          <h3 class="project-title"> NexConvert Web Application</h3>
-          <a href="https://link-to-mp4-mp3-production.up.railway.app/">
-          <button type="submit" class="submit-btn" style=" margin-bottom:20px;border-radius:50px;width:80px">Visit</button></a>
-          <span class="project-tech">HTML • CSS • Flask • Python • Gemini API</span>
-          <p>
-            <b>Converts links into videos</b>
-             Developed a web application for downloading YouTube and Instagram videos in MP4 or MP3 format.
-             Built the backend using Flask and integrated yt-dlp to fetch video metadata and manage downloads.
-             Implemented input validation and public-link verification for handling supported URLs.
-             Designed a responsive front-end interface, deployment was limited due to hosting policy and copyright restrictions.
-          </p>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title"> Data Analysis Dashboard</h3>
-          <a href="https://public.tableau.com/app/profile/vamsi.krishna4432/viz/firstHRDashboard/Dashboard1">
-          <button type="submit" class="submit-btn" style=" margin-bottom:20px;border-radius:50px;width:80px">Visit</button></a>
-          <span class="project-tech">HTML • CSS • JavaScript • NodeJs</span>
-          <p>
-            <b>Interactive Data Dashboard | Tableau:</b>
-            I Developed a comprehensive interactive dashboard using Tableau to visualize and analyze key business metrics, featuring dynamic 
-            charts, custom calculations, and intuitive filtering capabilities. The dashboard connects multiple data sources and transforms 
-            raw data into actionable insights through clean, professional visualizations.
-          </p>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title"> Simple Calculator Web App</h3>
-          <a href="https://calculator-gold-kappa.vercel.app/">
-          <button type="submit" class="submit-btn" style=" margin-bottom:20px;border-radius:50px;width:80px">Visit</button></a>
-          <span class="project-tech">HTML • CSS • JavaScript</span>
-          <p>
-            <b>Calculate your work in seconds</b>
-            Designed a fully responsive calculator with basic arithmetic
-            operations. Clean, minimalistic UI optimized for both desktop and
-            mobile devices with interactive button behavior and real-time input
-            handling.
-          </p>
+          <div class="timeline-item">
+            <div class="timeline-year ongoing">Ongoing</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Freelance Developer & Designer</h3>
+              <p class="timeline-company">Student · Bhimavaram</p>
+              <ul class="timeline-points">
+                <li>Created simple web applications and image design projects for personal and client use.</li>
+                <li>Explored AI/ML integrations in small-scale projects using Python libraries.</li>
+                <li>Open to internship and freelance collaborations in web development and AI/DS.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div id="education"></div>
-      <div class="section">
-        <h2 class="section-title">Education</h2>
+      <div class="section education-section">
+        <span class="education-label">EDUCATION</span>
+        <h2 class="education-heading">Academic Background</h2>
 
-        <div class="education-item">
-          <div class="education-degree">
-            B.Tech - Artificial Intelligence & Data Science
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="education-info">
+              <h3 class="education-degree">B.Tech – Artificial Intelligence & Data Science</h3>
+              <p class="education-institute">Vishnu Institute of Technology, Bhimavaram</p>
+              <p class="education-status">3rd Year (Currently Pursuing) · 8.32 cgpa · Expected 2027</p>
+            </div>
           </div>
-          <div class="education-details">
-            Vishnu Institute of Technology • Present
+
+          <div class="education-card">
+            <div class="education-icon"><i class="fas fa-book"></i></div>
+            <div class="education-info">
+              <h3 class="education-degree">Intermediate – MPC</h3>
+              <p class="education-institute">Bhashyam College</p>
+              <p class="education-status">Completed 2023 · Score: 7.7</p>
+            </div>
           </div>
-          <span class="cgpa">CGPA: 8.32</span>
-        </div>
 
-        <div class="education-item">
-          <div class="education-degree">Intermediate - MPC</div>
-          <div class="education-details">Bhashyam College • 2023</div>
-          <span class="cgpa">Score: 7.7</span>
-        </div>
-
-        <div class="education-item">
-          <div class="education-degree">SSC</div>
-          <div class="education-details">Sri Chaitanya College • 2020</div>
-          <span class="cgpa">Score: 597</span>
+          <div class="education-card">
+            <div class="education-icon"><i class="fas fa-school"></i></div>
+            <div class="education-info">
+              <h3 class="education-degree">SSC</h3>
+              <p class="education-institute">Sri Chaitanya College</p>
+              <p class="education-status">Completed 2020 · Score: 597</p>
+            </div>
+          </div>
         </div>
       </div>
       <div id="achievements"></div>
-      <div class="section">
-        <h2 class="section-title">Achievements & Certifications</h2>
+      <div class="section achievements-section">
+        <span class="achievements-label">ACHIEVEMENTS</span>
+        <h2 class="achievements-heading">Certificates</h2>
 
         <div class="achievement-item">
           <h4>🏆 Smart India Hackathon 2024</h4>
@@ -224,91 +298,35 @@
     <div class="footer">
   <div id="contact"></div>
   <div class="footer-container">
-    <div class="footer-content">
-      <div class="contact-left">
-        <h4>Get in touch</h4>
-        <p>Feel free to reach out to me for any opportunities, or just to say Hi <span style="font-size:x-large">
-          👋</span>!</p>
-        
-        <a href="mailto:23pa1a4527@vishnu.edu.in" class="contact-info-item">
-          <i class="fas fa-envelope"></i>
-          <span>23pa1a4527@vishnu.edu.in</span>
+    <div class="contact-section">
+      <span class="contact-label">CONTACT</span>
+      <h2 class="contact-heading">Let's Connect</h2>
+      
+      <p class="contact-description">
+        I'm actively looking for internship opportunities and open to freelance projects. Whether you have a project idea, a question, or just want to say hello — I'd love to hear from you.
+      </p>
+
+      <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/dasari-vamsi-krishna-364434303" target="_blank" class="social-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
         </a>
-        
-        <a href="tel:+919290569852" class="contact-info-item">
-          <i class="fas fa-phone"></i>
-          <span>+91-9290569852</span>
+        <a href="https://github.com" target="_blank" class="social-btn">
+          <i class="fab fa-github"></i> GitHub
         </a>
-        
-        <a href="https://www.linkedin.com/in/dasari-vamsi-krishna-364434303" class="contact-info-item" target="_blank">
-          <i class="fab fa-linkedin"></i>
-          <span>LinkedIn Profile</span>
+        <a href="mailto:vamsikrishnadasari1234@gmail.com" class="social-btn">
+          <i class="fas fa-envelope"></i> Email Me
         </a>
-        
-        <a href="https://www.instagram.com/vamsikrishnadasari3?igsh=MWFnNDU2c3QzYWpkMg==" class="contact-info-item" target="_blank">
-          <i class="fab fa-instagram"></i>
-          <span>Instagram</span>
-        </a>
-        
-        <a href="https://www.facebook.com/vamsi.krishna.dasari.922397" class="contact-info-item" target="_blank">
-          <i class="fab fa-facebook"></i>
-          <span>Facebook</span>
+        <a href="https://www.instagram.com/vamsikrishnadasari3" target="_blank" class="social-btn">
+          <i class="fab fa-instagram"></i> Instagram
         </a>
       </div>
 
-      <div class="contact-right">
-        <div class="message-box">
-          <h3>Send Me a Message</h3>
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                required
-              />
-            </div>
+      <a href="mailto:vamsikrishnadasari1234@gmail.com" class="email-link">vamsikrishnadasari1234@gmail.com</a>
+    </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your message"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">
-              <i class="fas fa-paper-plane"></i>Send Message
-            </button>
-          </form>
-        </div>
-      </div>
+    <div class="footer-footer">
+      <p>© 2025 Dasari Vamsi Krishna · Bhimavaram, Andhra Pradesh</p>
+      <p>Coded with ♥</p>
     </div>
   </div>
 </div>
